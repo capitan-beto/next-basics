@@ -17,6 +17,7 @@
 }
 
 body {
+  height: 100vh;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +25,18 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+a:hover {
+  background: lightblue;
+  transition: all 1s ease;
+}
+
+a {
+  padding: .7rem 1rem;
+  border-radius: 10px;
+}
+
+li {
+  padding: 1rem;
 }

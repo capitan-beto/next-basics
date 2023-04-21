@@ -1,0 +1,9 @@
+.header {
+    border: solid black 3px;
+}
+
+.navigation {
+    display: flex;
+    text-transform: uppercase;
+    width: 100%;
+}
