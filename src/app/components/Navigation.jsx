@@ -7,13 +7,16 @@ const links = [{
   }, {
     label: "About",
     route: "/about"
+  }, {
+    label: "Posts",
+    route: "/posts"
   }]
   
 export function Navigation() {
     return(
         <header className={styles.header}>
         <nav className={styles.navigation}>
-          <ul>
+          <ul className={styles.ul}>
             {links.map(({ label, route }) => {
               return <li key={route}>
                 <Link href={route}>

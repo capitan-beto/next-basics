@@ -1,5 +1,6 @@
 import './globals.css'
 import { Navigation } from './components/Navigation'
+import PostPage from './posts/page'
 
 export const metadata = {
   title: 'My first next project',

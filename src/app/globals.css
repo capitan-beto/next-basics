@@ -27,16 +27,18 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-a:hover {
-  background: lightblue;
-  transition: all 1s ease;
+li:hover {
+  background: rgb(0, 0, 0, .4);
+  transition: all .5s ease;
+  color: #fff;
 }
 
 a {
-  padding: .7rem 1rem;
+  padding: .7rem 2rem;
   border-radius: 10px;
 }
 
 li {
+  height: 100%;
   padding: 1rem;
 }
