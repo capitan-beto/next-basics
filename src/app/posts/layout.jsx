@@ -1,7 +1,8 @@
-export default function PostLayout({ chilren }) {
+export default function PostLayout({ children }) {
     return (
         <div>
-            <h1>Este es el layout de los post</h1>
+            <h1>Aqui se muestra mi contenido de posts</h1>
+            {children}
         </div>
     )
 }
