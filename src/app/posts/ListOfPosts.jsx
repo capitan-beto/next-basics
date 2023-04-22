@@ -2,7 +2,7 @@ import Link from "next/link";
 import { LikeButton } from "../components/LIkeButton";
 
 
-const fetchSinglePost = () => {
+const fetchPost = () => {
 //getStaticProps
 //=> return fetch("https://jsonplaceholder.typicode.com/posts").then(res => res.json());
 
