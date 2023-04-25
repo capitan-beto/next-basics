@@ -2,19 +2,20 @@ import Link from "next/link";
 import { LikeButton } from "../components/LIkeButton";
 
 
-const fetchPost = () => {
-//getStaticProps
-//=> return fetch("https://jsonplaceholder.typicode.com/posts").then(res => res.json());
+const fetchPost = async () => {
+    await new Promise(res => setTimeout(res, 1000));
+    //getStaticProps
+    //=> return fetch("https://jsonplaceholder.typicode.com/posts").then(res => res.json());
 
-//getServerSideProps
-//=> return fetch("https://jsonplaceholder.typicode.com/posts", {cache: "no-store"}).then(res => res.json());
+    //getServerSideProps
+    //=> return fetch("https://jsonplaceholder.typicode.com/posts", {cache: "no-store"}).then(res => res.json());
 
-//Incremental static regeneration
-return fetch("https://jsonplaceholder.typicode.com/posts", {
-    next: {
-        revalidate: 60
-    }
-}).then(res => res.json());
+    //Incremental static regeneration
+    return fetch("https://jsonplaceholder.typicode.com/posts", {
+        next: {
+            revalidate: 60
+        }
+    }).then(res => res.json());
 }
 
 export default async function ListOfPosts() {
