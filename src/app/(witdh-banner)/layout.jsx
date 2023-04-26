@@ -1,10 +1,7 @@
-import { Counter } from "./Counter"
-
 export default function PostLayout({ children }) {
     return (
         <div>
-            {/* <Counter/> */}
-            <small>Home &bull; Posts</small>
+            <marquee style={{ background: "red", color: "#fff" }}>Home &bull; Posts</marquee>
             {children}
         </div>
     )

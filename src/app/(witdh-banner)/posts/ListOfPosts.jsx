@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LikeButton } from "../components/LIkeButton";
+import { LikeButton } from "../../components/LIkeButton";
 
 
 const fetchPost = async () => {
