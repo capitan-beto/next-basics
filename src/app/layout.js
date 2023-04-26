@@ -1,6 +1,12 @@
 import './globals.css'
+import { Space_Grotesk } from "@next/font/google"
 import { Navigation } from './components/Navigation'
 import PostPage from './(witdh-banner)/posts/page'
+
+const font = Space_Grotesk({
+  weight: ["400", "700"],
+  subsets: ["latin"]
+})
 
 export const metadata = {
   title: 'My first next project',
@@ -10,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={font.className}>
         <Navigation/>
         {children}
       </body>
